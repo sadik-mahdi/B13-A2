@@ -19,11 +19,11 @@
       <div class="navbar flex justify-around  bg-[#1A0B2E]  items-center" >
         <div class="nav-logo text-2xl bg-linear-to-r from-[#F7E93F] via-[#FB09B4] to-[#9100F8] bg-clip-text">
           <div class="nav-con flex justify-center gap-[200px] ">
-            <h2 class="logo lg:block md:hidden sm:hidden "> 
+            <h2 class="logo lg:block md:hidden sm:flex sm:justify-around "> 
               <span class="lfp text-white font-bold">Tech</span>
-              <span class ="lsp  font-bold text-transparent">Wave</span>
+              <span class ="lsp font-bold text-transparent">Wave</span>
+              <i class= "lg:hidden menu fa-solid fa-bars text-white text-2xl"></i>
             </h2>
-              <i class= "md:hidden menu fa-solid fa-bars text-white text-2xl "></i>
           </div>
         </div>
         <div class="hidden md:flex gap-6 text-white">
@@ -41,6 +41,7 @@
           <div class="relative">
             <img class="absolute" src="/images/hero-circle.png" alt="" srcset="">
             <img class="absolute mx-auto ml-[115px] mt-[100px]" src="images/microphone.png" alt="" srcset="">
+            <div class="absolute  text-[#1A0B2E] bg-[#00FF88] w-[75px] h-[27px] text-center items-center text-[18px] rounded-2xl ml-[250px]">NEW</div>
           </div>
         </div>
 
@@ -65,7 +66,7 @@
         <br>
         Join thousands of young professionals and tech enthusiasts who start their day with TechWave.</p>
       </div>
-      <div class="about-data flex justify-between mx-[200px] m-auto pb-[120px] gap-[80px]">
+      <div class="about-data flex justify-center items-center flex-col md:flex md:flex-col md:justify-center md:items-center  lg:flex lg:flex-row mx-[200px] m-auto pb-[120px] gap-[80px]">
         <div class="box">
           <h2 class="text-[#00FF88] text-5xl font-black mb-[16px]">150K+</h2>
           <p class="text-[#FFFFFF] text-base font-normal text-[16px]">Monthly Listeners</p>
@@ -89,7 +90,7 @@
       <div class="h2 w-[1200px] m-auto text-center font-bold text-5xl text-[#FFFFFF] mb-[40px]">Why Choose TechWave
       </div>
 
-      <div class="tech-box m-auto grid grid-cols-1 w-[1200px] md:grid-cols-3 gap-[30px]">
+      <div class="tech-box m-auto grid grid-cols-2 md:w-[1200px] md:grid-cols-3 gap-[30px]">
         <div class="box rounded-[50px] min-h-[225px] bg-[#351165] pt-[107px] pl-[40px] pr-[40px] row-span-2">
           <img src="./images/headphone.png" alt="" srcset="">
           <h3 class="text-[#FFFFFF]  font-bold text-[24px] my-[16px]">Premium Audio Quality</h3>
@@ -124,8 +125,8 @@
         <div class="feature-text text-5xl font-bold text-[#FFFFFF] text-center mb-[40px]">
           <h2>Featured Episodes</h2>
         </div>
-        <div class="content flex gap-[30px]">
-          <div class="box1 w-[380px] h-[440px]">
+        <div class="content flex flex-col justify-center items-center md:flex md:flex-col md:justify-center md:items-center lg:gap-2 lg:flex lg:flex-row gap-2">
+          <div class="box1  border rounded-lg">
             <div class="div">
               <iframe class="aspect-video"src="https://www.youtube.com/embed/DEtYsLNCuMM?si=QSrclF89ZdAQWoV-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
@@ -135,7 +136,7 @@
               <h5 class="text-[#00FF88]"><img src="./images/clock.png" alt="" srcset="">42 min</h5>
             </div>
           </div>
-          <div class="box2 w-[380px] h-[440px]">
+          <div class="box2 object-cover ">
             <div class="div">
               <iframe class="aspect-video"src="https://www.youtube.com/embed/DEtYsLNCuMM?si=QSrclF89ZdAQWoV-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
@@ -145,7 +146,7 @@
               <h5 class="text-[#00FF88]"><img src="./images/clock.png" alt="" srcset="">35 min</h5>
             </div>
           </div>
-          <div class="box3 w-[380px] h-[440px]">
+          <div class="box3 object-contain">
             <div class="div">
               <iframe class="aspect-video"src="https://www.youtube.com/embed/DEtYsLNCuMM?si=QSrclF89ZdAQWoV-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
@@ -181,7 +182,7 @@
     </div>
   </main>
   <footer>
-    <div class="footer  h-[412px] bg-[url(/images/footer-bg.png)] ">
+    <div class="footer flex justify-center bg-center h-[412px] bg-[url(/images/footer-bg.png)] ">
       <div class="footer-content flex justify-center flex-col  pt-[120px] mt-[]">
         <div class="h2 text-2xl flex justify-center bg-linear-to-r from-[#F7E93F] via-[#FB09B4] to-[#9100F8] bg-clip-text text-[68px] mb-[32px]">
           <span class="lfp text-white font-bold">Tech</span>
@@ -189,7 +190,10 @@
         </div>
         <div class="list flex justify-center">
           <ul class="links text-[#FFFFFF] flex justify-center gap-[40px] mb-[32px]  text-center ">
-            <li><img src="./images/spotify.png" alt="" srcset="">Spotify</li>
+            <li class="flex gap-2 ">
+              <img src="./images/spotify.png" alt="" srcset="">
+              <h4 class="mt-2">Spotify</h4>
+            </li>
             <li><img src="./images/apple-podcast.png" alt="" srcset="">Apple Podcasts</li>
             <li><img src="./images/youtube-podcast.png" alt="" srcset="">YouTube</li>
             <li><img src="./images/twitter.png" alt="" srcset="">Twitter</li>
